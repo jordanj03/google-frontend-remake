@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advanced.css" />
+  </head>
+  <body>
+    <header>
+      <img src="" alt="Google Logo" class="google-logo" />
+      <div class="top-right">
+        <svg class="apps" focusable="false" viewbox="0 0 24 24">
+          <path
+            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+          ></path>
+        </svg>
+        <img
+          src="profile-picture.jpg"
+          alt="Profile picture"
+          class="profile-picture"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="app-bar">
+        <p class="main-text">Advanced Search</p>
+      </div>
+      <form action="https://google.com/search">
+        <div class="container grid main-grid">
+          <p class="top-heading">Find pages with...</p>
+          <div></div>
+          <p class="top-text bold">To do this in the search box</p>
+          <p class="filter-text">all these words:</p>
+          <input type="text" name="as_q" />
+          <p class="filter-text small">
+            Type the important words: <span>tri-color rat terrier</span>
+          </p>
+          <p class="filter-text">this exact word or phrase</p>
+          <input type="text" name="as_epq" />
+          <p class="filter-text small">
+            Put exact words in quotes: <span>"rat terrier"</span>
+          </p>
+          <p class="filter-text">any of these words:</p>
+          <input type="text" name="as_oq" />
+          <p class="filter-text small">
+            Type <span>OR</span> between all the words you want:
+            <span pan>miniature OR standard</span>
+          </p>
+          <p class="filter-text">none of these words:</p>
+          <input type="text" name="as_eq" />
+          <p class="filter-text small">
+            Put a minus sign just before words that you don't want:
+            <span>-rodent, -"Jack Russell"</span>
+          </p>
+          <p class="filter-text">numbers ranging from:</p>
+          <div class="double-container">
+            <input type="text" name="as_nlo" />
+            <p class="filter-text">to</p>
+            <input type="text" name="as_nhi" />
+          </div>
+          <p class="filter-text small">
+            Put two full stops between the numbers and add a unit of
+            measurement:
+            <span>10..35 kg, £300..£500, 2010..2011</span>
+          </p>
+        </div>
+        <div class="break"></div>
+        <div class="container grid secondary-grid">
+          <p class="top-heading">Then narrow your results by...</p>
+          <div></div>
+          <div></div>
+          <p class="filter-text">language:</p>
+          <select name="lr">
+            <option value="">any language</option>
+            <option value="lang_en">English</option>
+            <option value="lang_gr">Greek</option>
+            <option value="lang_de">German</option>
+          </select>
+          <p class="filter-text small">
+            Find pages in the language that you select.
+          </p>
+          <p class="filter-text">region:</p>
+          <select name="cr">
+            <option value="">any region</option>
+            <option value="countryGB">United Kingdom</option>
+            <option value="countryCY">Cyprus</option>
+            <option value="countryDE">Germany</option>
+          </select>
+          <p class="filter-text small">
+            Find pages published in a particular region.
+          </p>
+          <p class="filter-text">last update:</p>
+          <select name="as_qdr">
+            <option value="all">anytime</option>
+            <option value="d">past 24 hours</option>
+            <option value="w">past week</option>
+            <option value="m">past month</option>
+            <option value="y">past year</option>
+          </select>
+          <p class="filter-text small">
+            Find pages updated within the time that you specify
+          </p>
+          <p class="filter-text">site or domain:</p>
+          <input type="text" name="as_sitesearch" />
+          <p class="filter-text small">
+            Search one site (like <span>wikipedia.org</span>) or limit your
+            results to a domain like <span>.edu, .org</span> or
+            <span>.gov</span>
+          </p>
+          <p class="filter-text">terms appearing:</p>
+          <select name="as_occt">
+            <option value="any">anywhere in the page</option>
+            <option value="title">in the title of the page</option>
+            <option value="body">in the text of the page</option>
+            <option value="url">in the URL of the page</option>
+            <option value="links">in links to the page</option>
+          </select>
+          <p class="filter-text small">
+            Search for terms in the whole page, page title or web address, or
+            links to the page you're looking for.
+          </p>
+          <p class="filter-text">file type:</p>
+          <select name="as_filetype">
+            <option value="">any format</option>
+            <option value="xls">Microsoft Excel</option>
+            <option value="ppt">Microsoft Powerpoint</option>
+          </select>
+          <p class="fiter-text small">
+            Find pages in the format that you prefer.
+          </p>
+          <p class="filter-text blue">usage rights:</p>
+          <select name="tbs">
+            <option value="">not filtered by licence</option>
+            <option value="f">free to use or share</option>
+            <option value="fc">free to use or share, even commercially</option>
+            <option value="fm">free to use share or modify</option>
+            <option value="fmc">
+              free to use share or modify, even commercially
+            </option>
+          </select>
+          <p class="filter-text small">
+            Find pages that you are free to use yourself.
+          </p>
+          <div></div>
+          <input type="submit" value="Advanced Search" class="submit" />
+          <div></div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <p class="footer-text">Cyprus</p>
+      </div>
+      <div class="footer-bottom">
+        <a href="index.html" class="footer-link">Search</a>
+        <a href="images.html" class="footer-link">Images</a>
+      </div>
+    </footer>
+  </body>
+</html>
